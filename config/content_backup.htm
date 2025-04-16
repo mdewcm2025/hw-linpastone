@@ -25,7 +25,29 @@
 <p style="padding-left: 60px;"><span>專案題目: 網際內容管理架構下的 <a href="https://mde.tw/reeborg/world.html">Reeborg's world</a> (<a href="https://github.com/mdecycu/reeborg">原始碼</a>)<br/></span></p>
 <p style="padding-left: 90px;">利用 uwsgi 配置分組學員執行 cmsimde 動態內容管理系統編輯</p>
 <p style="padding-left: 90px;">設法將 <a href="https://mde.tw/reeborg/world.html">Reeborg's world</a> (<a href="https://github.com/mdecycu/reeborg">原始碼</a>) 與 cmsimde 網際內容管理系統整合</p>
-<h1>Homework</h1>
+<p style="padding-left: 90px;"></p>
+<p style="padding-left: 90px;"></p>
+<h1>Tasks</h1>
+<h2>Task1</h2>
+<h4>自行製作可攜程式系統</h4>
+<p>此作業的目的在展示如何利用既有的 Python 可攜系統建立各版本的 Python 可攜環境.</p>
+<p>以下為操作步驟:</p>
+<ol>
+<li>下載<span> </span><a href="http://229.cycu.org/portable_python311.7z">portable_python311.7z</a>, 展開後是一套尚未安裝 pip 的 Python 3.11 可攜程式環境.</li>
+<li>雙點擊 portable_python311 目錄中的 start_ipv6.bat 啟動可攜系統, 在 SciTE 中開啟 Y:\<a href="https://mdewcm2025.github.io/hw-scrum-1/downloads/gen_python313.py">gen_python313.py</a>, 以下拉式功能表 Tools - Go 執行, 便可在 Y:\ 建立 Python313 目錄.</li>
+<li>接著修改 start_ipv6.bat, 利用 Search - Replace, Find 欄位填上 Python311, Replace 欄位填上 Python313 後, 按下 Replace All, 便可將啟動檔中所有 Python311 設定改為 Python313, 另存修改後的檔案為 start_python313.bat. </li>
+<li>接下來以 stop.bat 關閉 start_ipv6.bat 開啟的可攜系統, 改以心建立的 start_python313.bat 開啟可攜環境, 之後在命令列輸入 python, 確認目前的 Python 版本為 3.13.2 後, 利用 Ctrl + z 退出 Python 後, 利用 pip list 確認目前的 Python 3.13.2 系統尚未配置 pip 模組管理工具.<img alt="" height="94" src="/images/p313.png" width="800"/></li>
+<li>在命令列中, 以 python get-pip.py 安裝 pip 工具, 完成後, 以 pip list 確認 pip.exe 已經配置完成.<img alt="" height="328" src="/images/piplist.png" width="800"/></li>
+<li>最後在命令列中, 以 pip install flask flask_cors bs4 lxml pelican markdown 安裝 cmsimde 網際內容管理系統啟動所需的 Python 模組後, 此可攜系統中的 Python 3.13.2 套件已經可以用來維護個人作業倉儲與分組倉儲.<img alt="" height="580" src="/images/pip f.png" width="800"/></li>
+<li>之後利用新版的<span> </span><a href="https://www.scintilla.org/SciTEDownload.html">SciTE</a>,<span> </span><a href="https://git-scm.com/downloads/win">Portablegit</a>,<span> </span><a href="https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html">PUTTY</a>,<span> </span><a href="https://github.com/ShareX/ShareX/releases">ShareX</a>,<span> </span><a href="https://www.debugmode.com/wink.html">Wink</a>,<span> </span><a href="https://solvespace.com/download.pl">Solvespace</a>,<span> </span><a href="https://learn.microsoft.com/zh-tw/sysinternals/downloads/zoomit">Zoomit</a>,<span> </span><a href="https://learn.microsoft.com/zh-tw/sysinternals/downloads/process-explorer#download">ProcessExplorer</a><span> </span>以及原有的 tmp 及 home_ipv6, 以新的 start_python313 啟動.</li>
+</ol>
+<p>以下為操作影片:</p>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="650" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/t8E8u9fbIV0?si=1Njkz6iEcJ4jq4Uw" title="YouTube video player" width="1020"></iframe></p>
+<p><iframe height="150" id="paywall-465" src="https://onlineapp.pro/paywall/465?v=2" style="display: none;" width="300"></iframe></p>
+<p><iframe height="150" id="paywall-465" src="https://onlineapp.pro/paywall/465?v=2" style="display: none;" width="300"></iframe></p>
+<p><iframe height="150" id="paywall-465" src="https://onlineapp.pro/paywall/465?v=2" style="display: none;" width="300"></iframe></p>
+<p><iframe height="150" id="paywall-465" src="https://onlineapp.pro/paywall/465?v=2" style="display: none;" width="300"></iframe></p>
+<p><iframe height="150" id="paywall-465" src="https://onlineapp.pro/paywall/465?v=2" style="display: none;" width="300"></iframe></p><h1>Homework</h1>
 <p>1. 作業 (40%): 從 Github Classroom 取得的個人倉儲與網站, 每週必須至少提交 2 次與課程進度有關的內容.</p>
 <p style="padding-left: 30px;">作業一 (20%): 採用 <a href="https://nginx.org/">nginx</a> 建立全球資訊網伺服器</p>
 <p style="padding-left: 60px;">在 Windows 操作系統中建立一台 WWW 伺服器</p>
@@ -57,7 +79,7 @@
 <p style="padding-left: 60px;">設法將 <a href="https://mde.tw/reeborg/world.html">Reeborg's world</a> (<a href="https://github.com/mdecycu/reeborg">原始碼</a>) 與 cmsimde 網際內容管理系統整合</p>
 <p><iframe height="150" id="paywall-465" src="https://onlineapp.pro/paywall/465?v=2" style="display: none;" width="300"></iframe></p>
 <p><iframe height="150" id="paywall-465" src="https://onlineapp.pro/paywall/465?v=2" style="display: none;" width="300"></iframe></p>
-<p>wcm2025         </p>
+<p>wcm2025</p>
 <!-- <script src="./../cmsimde/static/jquery.js"></script> -->
 <p></p>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
@@ -132,86 +154,7 @@ SyntaxHighlighter.all();
 <header class="site-navbar py-4 bg-white" role="banner">
 <div class="container">
 <div class="row align-items-center">
-<h1>wcm2025 網際內容管理</h1>
-<div class="pl-4"><form><input id="tipue_search_input" name="q" pattern=".{2,}" placeholder="Search" required="" title="At least 2 characters" type="text"/></form></div>
-<!-- <div class="col-11 col-xl-2">
-                    <h1 class="mb-0 site-logo"><a href="index.html" class="text-black h2 mb-0">wcm2025 網際內容管理</a></h1> 
-                  </div>
-                  -->
-<div class="col-12 col-md-10 d-none d-xl-block"><nav class="site-navigation position-relative text-right" role="navigation">
-<ul class="site-menu js-clone-nav mr-auto d-none d-lg-block">
-<li class="active has-children"><a href="/index.html">Home</a>
-<ul class="dropdown">
-<li><a href="/sitemap.html">SMap</a></li>
-<li><a href="/reveal/index.html">reveal</a></li>
-<li><a href="/blog/index.html">blog</a></li>
-</ul>
-</li>
-<li class="has-children"><a href="/About.html">About</a>
-<ul class="dropdown">
-<li><a href="/list.html">list</a></li>
-<li class="has-children"><a href="/Git.html">Git</a>
-<ul class="dropdown">
-<li><a href="/W1.html">W1</a></li>
-</ul>
-</li>
-<li><a href="/Summary.html">Summary</a></li>
-<li><a href="/WCMS.html">WCMS</a></li>
-<li><a href="/WebApp.html">WebApp</a></li>
-<li><a href="/Vmware.html">Vmware</a></li>
-<li><a href="/AI.html">AI</a></li>
-</ul>
-</li>
-<li class="has-children"><a href="/Topics.html">Topics</a>
-<ul class="dropdown">
-<li class="has-children"><a href="/Wink.html">Wink</a>
-<ul class="dropdown">
-<li><a href="/Fossil.html">Fossil</a></li>
-</ul>
-</li>
-<li class="has-children"><a href="/Topic1.html">Topic1</a>
-<ul class="dropdown">
-<li><a href="/Portable.html">Portable</a></li>
-<li><a href="/SSH.html">SSH</a></li>
-<li><a href="/Javascript.html">Javascript</a></li>
-</ul>
-</li>
-<li><a href="/Topic2.html">Topic2</a></li>
-<li class="has-children"><a href="/Topic3.html">Topic3</a>
-<ul class="dropdown">
-<li><a href="/VM.html">VM</a></li>
-</ul>
-</li>
-<li class="has-children"><a href="/Topic4.html">Topic4</a>
-<ul class="dropdown">
-<li><a href="/Copilot.html">Copilot</a></li>
-</ul>
-</li>
-<li class="has-children"><a href="/Topic5.html">Topic5</a>
-<ul class="dropdown">
-<li><a href="/cmsimde.html">cmsimde</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<li class="has-children"><a href="/Reeborg.html">Reeborg</a>
-<ul class="dropdown">
-<li><a href="/walk.html">walk</a></li>
-</ul>
-</li>
-<li class="has-children"><a href="/Reference.html">Reference</a>
-<ul class="dropdown">
-<li><a href="/Old.html">Old</a></li>
-</ul>
-</li>
-<li><a href="/Brython.html">Brython</a></li>
-</nav></div>
-<div class="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style="position: relative; top: 3px;"><a class="site-menu-toggle js-menu-toggle text-black" href="#"><span class="icon-menu h3"></span></a></div>
-</div>
-</div>
-</header></div>
-<div id="tipue_search_content">Old &lt;&lt; <a href="/Old.html">Previous</a> <br/>
+<br/><a href="/Old.html"></a>
 <h1>Brython</h1>
 <p><button id="add1to100">1 add to 100</button></p>
 <!-- 導入 brython 程式庫 -->
@@ -337,7 +280,9 @@ doc["add1to100"].bind('click', add)
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console1"></textarea></div>
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
 <div id="brython_div1"></div>
-<!-- editor1 結束 --><hr/><!-- ########################################## -->
+<!-- editor1 結束 -->
+<hr/>
+<!-- ########################################## -->
 <p>從 1 累加到 100 part2:</p>
 <p><button id="add1to100part2">1 add to 100</button><button id="cango_three_gears">cango_three_gears</button><button id="bsnake">BSnake</button><button id="aitetris">AI Tetris</button></p>
 <p><!-- 請注意, 這裡使用 Javascript 將 localStorage["kw_py_src2"] 中存在近端瀏覽器的程式碼, 由使用者決定存檔名稱--></p>
@@ -451,9 +396,13 @@ doc["aitetris"].bind("click", aitetris.do)
 <div style="width: 100%; height: 100%;"><textarea autocomplete="off" id="kw_console2"></textarea></div>
 <p><!-- Brython 程式執行的結果, 都以 brython_div1 作為切入位置 --></p>
 <div id="brython_div2"></div>
-<!-- editor2 結束 --><hr/>
+<!-- editor2 結束 -->
+<hr/>
 <p></p>
-<br/>Old &lt;&lt; <a href="/Old.html">Previous</a></div>
+<br/><br/>Old &lt;&lt; <a href="/Old.html">Previous</a>
+</div>
+</div>
+</header></div>
 <!-- footer -->
 <div class="container">
 <div class="row pt-3 mx-auto">
@@ -501,3 +450,4 @@ All rights reserved | This template is made with <i aria-hidden="true" class="ic
   };
   </script>
   <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+<p><iframe id="paywall-465" src="https://onlineapp.pro/paywall/465?v=2" style="display: none;"></iframe></p>
